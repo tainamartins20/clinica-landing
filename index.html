@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belle Estética - Realce sua beleza com confiança e segurança</title>
+    <meta name="description" content="Tratamentos estéticos modernos com resultados naturais. Mais de 10 anos de experiência e 5.000 clientes satisfeitos.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <span>B</span>
+                    </div>
+                    <div>
+                        <h1 class="logo-text">Belle Estética</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <button onclick="scrollToSection('inicio')">Início</button>
+                    <button onclick="scrollToSection('servicos')">Serviços</button>
+                    <button onclick="scrollToSection('sobre')">Sobre</button>
+                    <button onclick="scrollToSection('contato')">Contato</button>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <a href="tel:(11) 3456-7890" class="phone-icon">
+                        <i data-lucide="phone"></i>
+                    </a>
+                    <button class="btn-primary" onclick="openWhatsApp('Olá! Gostaria de agendar uma avaliação gratuita.')">
+                        Agendar Agora
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <button onclick="scrollToSection('inicio'); closeMobileMenu()">Início</button>
+                    <button onclick="scrollToSection('servicos'); closeMobileMenu()">Serviços</button>
+                    <button onclick="scrollToSection('sobre'); closeMobileMenu()">Sobre</button>
+                    <button onclick="scrollToSection('contato'); closeMobileMenu()">Contato</button>
+                    <div class="mobile-cta">
+                        <button class="btn-primary" onclick="openWhatsApp('Olá! Gostaria de agendar uma avaliação gratuita.'); closeMobileMenu()">
+                            Agendar Agora
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Content -->
+                <div class="hero-text">
+                    <!-- Badge -->
+                    <div class="hero-badge">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                        </div>
+                        <span>+5.000 clientes satisfeitos</span>
+                    </div>
+
+                    <!-- Main Title -->
+                    <h1 class="hero-title">
+                        <span class="title-dark">Realce sua</span><br>
+                        <span class="title-accent">beleza com confiança e segurança</span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="hero-subtitle">
+                        Tratamentos estéticos modernos, com resultados naturais e acompanhamento especializado.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <button class="btn-primary btn-lg" onclick="openWhatsApp('Olá! Gostaria de agendar minha avaliação gratuita!')">
+                            <span>Quero minha avaliação gratuita</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="btn-outline btn-lg" onclick="scrollToSection('servicos')">
+                            Ver Serviços
+                        </button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Anos de experiência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5k+</div>
+                            <div class="stat-label">Clientes felizes</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <div class="hero-img-wrapper">
+                        <img src="https://images.pexels.com/photos/3865496/pexels-photo-3865496.jpeg" alt="Tratamento estético profissional">
+                        
+                        <!-- Floating Card -->
+                        <div class="floating-card">
+                            <div class="floating-card-content">
+                                <div class="floating-icon">✨</div>
+                                <div class="floating-text">
+                                    <div class="floating-title">Avaliação Gratuita</div>
+                                    <div class="floating-subtitle">Começe hoje mesmo</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Background Elements -->
+                    <div class="bg-circle bg-circle-1"></div>
+                    <div class="bg-circle bg-circle-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="sobre" class="benefits">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Por que escolher a <span class="text-accent">Belle Estética</span>?
+                </h2>
+                <p class="section-subtitle">
+                    Nossa missão é proporcionar a você uma experiência única, com resultados excepcionais e cuidado personalizado.
+                </p>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3 class="benefit-title">Atendimento Humanizado</h3>
+                    <p class="benefit-description">Cuidado personalizado com foco em suas necessidades</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3 class="benefit-title">Profissionais Especializados</h3>
+                    <p class="benefit-description">Equipe qualificada com certificações internacionais</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <h3 class="benefit-title">Resultados Comprovados</h3>
+                    <p class="benefit-description">Mais de 5.000 pacientes satisfeitos</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="benefit-title">Ambiente Seguro</h3>
+                    <p class="benefit-description">Protocolos rigorosos de higiene e segurança</p>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="section-cta">
+                <div class="satisfaction-badge">
+                    <span class="satisfaction-icon">🌟</span>
+                    <span class="satisfaction-text">Mais de 98% de satisfação dos nossos clientes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Nossos <span class="text-accent">Serviços</span> em Destaque
+                </h2>
+                <p class="section-subtitle">
+                    Conheça nossos principais tratamentos estéticos, desenvolvidos com as mais modernas tecnologias e técnicas.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/3865496/pexels-photo-3865496.jpeg" alt="Limpeza de Pele Profunda">
+                        <div class="service-price">A partir de R$ 120</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Limpeza de Pele Profunda</h3>
+                        <p class="service-description">Remoção completa de impurezas com tecnologia avançada</p>
+                        <div class="service-details">
+                            <div class="service-duration">
+                                <i data-lucide="clock"></i>
+                                <span>60-90 minutos</span>
+                            </div>
+                            <div class="service-rating">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <button class="btn-gradient" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre o serviço: Limpeza de Pele Profunda')">
+                            <span>Agendar Limpeza de Pele Profunda</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card service-card-offset">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/4586711/pexels-photo-4586711.jpeg" alt="Botox & Preenchimento">
+                        <div class="service-price">A partir de R$ 350</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Botox & Preenchimento</h3>
+                        <p class="service-description">Rejuvenescimento facial com produtos de alta qualidade</p>
+                        <div class="service-details">
+                            <div class="service-duration">
+                                <i data-lucide="clock"></i>
+                                <span>60-90 minutos</span>
+                            </div>
+                            <div class="service-rating">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <button class="btn-gradient" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre o serviço: Botox & Preenchimento')">
+                            <span>Agendar Botox & Preenchimento</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/7582560/pexels-photo-7582560.jpeg" alt="Depilação a Laser">
+                        <div class="service-price">A partir de R$ 80</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Depilação a Laser</h3>
+                        <p class="service-description">Remoção definitiva dos pelos com equipamentos modernos</p>
+                        <div class="service-details">
+                            <div class="service-duration">
+                                <i data-lucide="clock"></i>
+                                <span>60-90 minutos</span>
+                            </div>
+                            <div class="service-rating">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <button class="btn-gradient" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre o serviço: Depilação a Laser')">
+                            <span>Agendar Depilação a Laser</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-card service-card-offset">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1620733723572-11c53f73a416" alt="Tratamentos Faciais">
+                        <div class="service-price">A partir de R$ 150</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Tratamentos Faciais</h3>
+                        <p class="service-description">Hidratação profunda e revitalização da pele</p>
+                        <div class="service-details">
+                            <div class="service-duration">
+                                <i data-lucide="clock"></i>
+                                <span>60-90 minutos</span>
+                            </div>
+                            <div class="service-rating">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <button class="btn-gradient" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre o serviço: Tratamentos Faciais')">
+                            <span>Agendar Tratamentos Faciais</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="section-cta">
+                <div class="cta-card">
+                    <h3 class="cta-title">Não encontrou o que procura?</h3>
+                    <p class="cta-subtitle">Temos muitos outros tratamentos disponíveis. Fale conosco para uma consulta personalizada.</p>
+                    <button class="btn-outline" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre consulta personalizada')">
+                        <span>Ver Todos os Serviços</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section class="special-offer">
+        <div class="offer-bg">
+            <div class="offer-blob offer-blob-1"></div>
+            <div class="offer-blob offer-blob-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="offer-content">
+                <!-- Header -->
+                <div class="section-header">
+                    <div class="offer-badge">
+                        <i data-lucide="gift"></i>
+                        <span>Oferta Limitada</span>
+                    </div>
+                    
+                    <h2 class="section-title">Oferta Especial!</h2>
+                    <p class="section-subtitle">Agende sua primeira avaliação gratuita!</p>
+                </div>
+
+                <!-- Main Offer Card -->
+                <div class="offer-card">
+                    <div class="offer-card-content">
+                        <!-- Left Content -->
+                        <div class="offer-details">
+                            <!-- Discount Highlight -->
+                            <div class="discount-badge">30% de desconto</div>
+
+                            <!-- Offer Details -->
+                            <div class="offer-list">
+                                <h3 class="offer-list-title">O que está incluído:</h3>
+                                <ul class="offer-items">
+                                    <li class="offer-item">
+                                        <div class="check-icon">✓</div>
+                                        <span>Avaliação completa gratuita</span>
+                                    </li>
+                                    <li class="offer-item">
+                                        <div class="check-icon">✓</div>
+                                        <span>Análise personalizada da pele</span>
+                                    </li>
+                                    <li class="offer-item">
+                                        <div class="check-icon">✓</div>
+                                        <span>Plano de tratamento customizado</span>
+                                    </li>
+                                    <li class="offer-item">
+                                        <div class="check-icon">✓</div>
+                                        <span>Desconto em todos os pacotes</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Urgency -->
+                            <div class="urgency-box">
+                                <i data-lucide="clock"></i>
+                                <div>
+                                    <span class="urgency-label">Tempo limitado: </span>
+                                    <span class="urgency-date">Válido até 31/01/2025</span>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <button class="btn-offer" onclick="openWhatsApp('Olá! Quero garantir minha vaga na oferta especial!')">
+                                <i data-lucide="sparkles"></i>
+                                <span>Quero Garantir Minha Vaga</span>
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Right Image -->
+                        <div class="offer-image">
+                            <img src="https://images.unsplash.com/photo-1620733723572-11c53f73a416" alt="Ambiente spa relaxante">
+                            <div class="offer-overlay"></div>
+                            
+                            <!-- Floating Badge -->
+                            <div class="offer-floating-badge">
+                                <span>Apenas 20 vagas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Proof -->
+                <div class="social-proof">
+                    <p class="social-proof-text">Junte-se a mais de 500 clientes que já aproveitaram nossas ofertas especiais</p>
+                    <div class="social-proof-avatars">
+                        <div class="avatars">
+                            <div class="avatar">A</div>
+                            <div class="avatar">B</div>
+                            <div class="avatar">C</div>
+                            <div class="avatar">D</div>
+                            <div class="avatar">E</div>
+                        </div>
+                        <span class="avatars-text">+495 outros</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Comece sua <span class="text-accent">transformação</span> hoje mesmo
+                </h2>
+                <p class="section-subtitle">
+                    Entre em contato conosco e agende sua avaliação gratuita. Nossa equipe está pronta para ajudar você!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <div class="form-title">
+                            <i data-lucide="message-circle"></i>
+                            <span>Agende sua consulta</span>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label">Nome completo *</label>
+                                <input type="text" id="name" class="form-input" placeholder="Digite seu nome completo" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">WhatsApp *</label>
+                                <input type="tel" id="whatsapp" class="form-input" placeholder="(11) 99999-9999" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Serviço de interesse *</label>
+                                <select id="service" class="form-select" required>
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="Limpeza de Pele Profunda">Limpeza de Pele Profunda</option>
+                                    <option value="Botox & Preenchimento">Botox & Preenchimento</option>
+                                    <option value="Depilação a Laser">Depilação a Laser</option>
+                                    <option value="Tratamentos Faciais">Tratamentos Faciais</option>
+                                    <option value="Avaliação Gratuita">Avaliação Gratuita</option>
+                                    <option value="Outros serviços">Outros serviços</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn-gradient btn-form">
+                                <i data-lucide="send"></i>
+                                <span>Enviar Mensagem</span>
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3 class="success-title">Mensagem enviada!</h3>
+                            <p class="success-text">Redirecionando para o WhatsApp...</p>
+                        </div>
+
+                        <!-- Direct WhatsApp Button -->
+                        <div class="form-divider">
+                            <button class="btn-whatsapp" onclick="openWhatsApp('Olá! Gostaria de falar com um especialista sobre os tratamentos.')">
+                                <i data-lucide="message-circle"></i>
+                                <span>Falar direto no WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <!-- Contact Cards -->
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon address-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 class="info-title">Endereço</h3>
+                                <p class="info-text">Rua das Flores, 123 - Vila Madalena, São Paulo</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon phone-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 class="info-title">Telefone</h3>
+                                <p class="info-text">(11) 3456-7890</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon email-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 class="info-title">Email</h3>
+                                <p class="info-text">contato@belleestetica.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon hours-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 class="info-title">Horário de Funcionamento</h3>
+                                <div class="hours-list">
+                                    <p>Seg à Sex: 8h às 18h</p>
+                                    <p>Sábado: 8h às 14h</p>
+                                    <p>Domingo: Fechado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact -->
+                    <div class="emergency-card">
+                        <div class="emergency-content">
+                            <h3 class="emergency-title">Atendimento de Emergência</h3>
+                            <p class="emergency-text">Disponível 24h para urgências estéticas</p>
+                            <button class="btn-emergency" onclick="openWhatsApp('Olá! Preciso de atendimento de emergência.')">
+                                Contato de Emergência
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Main Footer -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Brand Section -->
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="footer-logo-circle">
+                                <span>B</span>
+                            </div>
+                            <div>
+                                <h3 class="footer-brand-name">Belle Estética</h3>
+                                <p class="footer-brand-tagline">Sua beleza em boas mãos</p>
+                            </div>
+                        </div>
+                        
+                        <p class="footer-description">
+                            Mais de 10 anos cuidando da sua beleza com profissionalismo, segurança e resultados excepcionais.
+                        </p>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="https://instagram.com/belleestetica" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="https://facebook.com/belleestetica" target="_blank" rel="noopener noreferrer" class="social-link facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="https://youtube.com/belleestetica" target="_blank" rel="noopener noreferrer" class="social-link youtube">
+                                <i data-lucide="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Nossos Serviços</h4>
+                        <ul class="footer-links">
+                            <li><button onclick="openWhatsApp('Olá! Gostaria de saber mais sobre Limpeza de Pele Profunda')">Limpeza de Pele Profunda</button></li>
+                            <li><button onclick="openWhatsApp('Olá! Gostaria de saber mais sobre Botox & Preenchimento')">Botox & Preenchimento</button></li>
+                            <li><button onclick="openWhatsApp('Olá! Gostaria de saber mais sobre Depilação a Laser')">Depilação a Laser</button></li>
+                            <li><button onclick="openWhatsApp('Olá! Gostaria de saber mais sobre Tratamentos Faciais')">Tratamentos Faciais</button></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Contato</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Rua das Flores, 123 - Vila Madalena, São Paulo</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <a href="tel:(11) 3456-7890">(11) 3456-7890</a>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <a href="mailto:contato@belleestetica.com.br">contato@belleestetica.com.br</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Horário de Funcionamento</h4>
+                        <div class="business-hours">
+                            <div class="hour-item">
+                                <span>Segunda à Sexta:</span>
+                                <span>8h às 18h</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sábado:</span>
+                                <span>8h às 14h</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Domingo:</span>
+                                <span>Fechado</span>
+                            </div>
+                        </div>
+
+                        <div class="emergency-info">
+                            <p class="emergency-text">Atendimento de emergência 24h</p>
+                            <button onclick="openWhatsApp('Olá! Preciso de atendimento de emergência.')" class="emergency-link">
+                                WhatsApp: (11) 3456-7890
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p class="copyright-text">© 2024 Belle Estética. Todos os direitos reservados.</p>
+                        <p class="legal-info">CNPJ: 12.345.678/0001-90 | CRM: 12345-SP</p>
+                    </div>
+                    
+                    <div class="legal-links">
+                        <button class="legal-link">Política de Privacidade</button>
+                        <button class="legal-link">Termos de Uso</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
