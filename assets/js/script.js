@@ -1,19 +1,13 @@
-// Belle Estética - Professional Landing Page JavaScript
 
-// Initialize Lucide icons when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Lucide icons
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
     
-    // Initialize scroll effects
     initializeScrollEffects();
     
-    // Initialize form handling
     initializeFormHandling();
     
-    // Initialize smooth animations
     initializeAnimations();
 });
 
@@ -67,18 +61,14 @@ function initializeFormHandling() {
             const service = document.getElementById('service').value;
             
             if (name && whatsapp && service) {
-                // Hide form and show success message
                 contactForm.style.display = 'none';
                 successMessage.style.display = 'block';
                 
-                // Create WhatsApp message
                 const message = `Olá! Meu nome é ${name}. Tenho interesse no serviço: ${service}. Meu WhatsApp: ${whatsapp}`;
                 
-                // Redirect to WhatsApp after 2 seconds
                 setTimeout(() => {
                     openWhatsApp(message);
                     
-                    // Reset form after 3 seconds
                     setTimeout(() => {
                         contactForm.style.display = 'block';
                         successMessage.style.display = 'none';
@@ -92,7 +82,6 @@ function initializeFormHandling() {
 
 // Animation Functions
 function initializeAnimations() {
-    // Intersection Observer for scroll animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -119,10 +108,8 @@ function initializeAnimations() {
 
 // Phone Number Formatting
 function formatPhoneNumber(input) {
-    // Remove all non-digits
     const cleaned = input.replace(/\D/g, '');
     
-    // Format as (XX) XXXXX-XXXX
     const match = cleaned.match(/^(\d{2})(\d{5})(\d{4})$/);
     if (match) {
         return `(${match[1]}) ${match[2]}-${match[3]}`;
@@ -142,27 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Smooth scroll for anchor links
-document.addEventListener('click', function(e) {
-    if (e.target.matches('a[href^="#"]')) {
-        e.preventDefault();
-        const targetId = e.target.getAttribute('href').substring(1);
-        scrollToSection(targetId);
-    }
-});
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(e) {
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    
-    if (mobileMenu && mobileMenu.classList.contains('active')) {
-        if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-            closeMobileMenu();
-        }
-    }
-});
-
 // Keyboard navigation
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
@@ -174,7 +140,6 @@ document.addEventListener('keydown', function(e) {
 let ticking = false;
 
 function updateOnScroll() {
-    // Add any scroll-based animations here
     ticking = false;
 }
 
@@ -229,7 +194,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     images.forEach(img => {
         img.addEventListener('error', function() {
-            // Placeholder image or hide image on error
             this.style.display = 'none';
         });
         
@@ -257,15 +221,12 @@ document.addEventListener('DOMContentLoaded', preloadImages);
 
 // Analytics tracking (placeholder)
 function trackEvent(eventName, properties = {}) {
-    // Add your analytics tracking code here
     console.log('Event tracked:', eventName, properties);
     
-    // Example: Google Analytics 4
     if (typeof gtag !== 'undefined') {
         gtag('event', eventName, properties);
     }
     
-    // Example: Facebook Pixel
     if (typeof fbq !== 'undefined') {
         fbq('track', eventName, properties);
     }
@@ -273,7 +234,6 @@ function trackEvent(eventName, properties = {}) {
 
 // Track important events
 document.addEventListener('DOMContentLoaded', function() {
-    // Track form submissions
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function() {
@@ -307,7 +267,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Accessibility improvements
 document.addEventListener('DOMContentLoaded', function() {
-    // Add skip to main content link
     const skipLink = document.createElement('a');
     skipLink.href = '#inicio';
     skipLink.textContent = 'Pular para o conteúdo principal';
@@ -350,23 +309,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Performance monitoring
 document.addEventListener('DOMContentLoaded', function() {
-    // Monitor Core Web Vitals
     if ('PerformanceObserver' in window) {
-        // Largest Contentful Paint
         new PerformanceObserver((entryList) => {
             for (const entry of entryList.getEntries()) {
                 console.log('LCP:', entry.startTime);
             }
         }).observe({ entryTypes: ['largest-contentful-paint'] });
         
-        // First Input Delay
         new PerformanceObserver((entryList) => {
             for (const entry of entryList.getEntries()) {
                 console.log('FID:', entry.processingStart - entry.startTime);
             }
         }).observe({ entryTypes: ['first-input'] });
         
-        // Cumulative Layout Shift
         new PerformanceObserver((entryList) => {
             for (const entry of entryList.getEntries()) {
                 if (!entry.hadRecentInput) {
@@ -377,19 +332,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Service Worker registration (for PWA capabilities)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        // Uncomment when you have a service worker
-        // navigator.serviceWorker.register('/sw.js')
-        //     .then(registration => console.log('SW registered'))
-        //     .catch(error => console.log('SW registration failed'));
-    });
-}
-
 // Utility functions
 const utils = {
-    // Debounce function
     debounce(func, wait, immediate) {
         let timeout;
         return function executedFunction(...args) {
@@ -431,7 +375,7 @@ const utils = {
     
     // Smooth scroll to element
     smoothScrollTo(element, duration = 1000) {
-        const targetPosition = element.offsetTop - 80; // Account for header
+        const targetPosition = element.offsetTop - 80; 
         const startPosition = window.pageYOffset;
         const distance = targetPosition - startPosition;
         let startTime = null;
