@@ -7,11 +7,7 @@ O objetivo do projeto é simular um site moderno e responsivo para clínicas de 
 
 ## 🔗 Visualizar Projeto
 
-<a href="https://tainamartins20.github.io/clinica-landing/" target="_blank">
-  <button style="padding:10px 20px; background-color:#ff6b81; color:white; border:none; border-radius:5px; cursor:pointer;">
-    Visualizar Projeto
-  </button>
-</a>
+[Visualizar Projeto](https://tainamartins20.github.io/clinica-landing/)
 
 ---
 
