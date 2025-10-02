@@ -26,61 +26,6 @@ function openWhatsApp(message) {
     window.open(whatsappUrl, '_blank');
 }
 
-// Smooth Scrolling Navigation
-function scrollToSection(sectionId) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    }
-}
-
-// Mobile Menu Functions
-function toggleMobileMenu() {
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    
-    if (mobileMenu) {
-        mobileMenu.classList.toggle('active');
-        
-        // Update icon
-        const icon = menuBtn.querySelector('i');
-        if (mobileMenu.classList.contains('active')) {
-            icon.setAttribute('data-lucide', 'x');
-        } else {
-            icon.setAttribute('data-lucide', 'menu');
-        }
-        
-        // Refresh icons
-        if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-        }
-    }
-}
-
-function closeMobileMenu() {
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    
-    if (mobileMenu && mobileMenu.classList.contains('active')) {
-        mobileMenu.classList.remove('active');
-        
-        // Update icon
-        const icon = menuBtn.querySelector('i');
-        icon.setAttribute('data-lucide', 'menu');
-        
-        // Refresh icons
-        if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-        }
-    }
-}
 
 // Header Scroll Effect
 function initializeScrollEffects() {
