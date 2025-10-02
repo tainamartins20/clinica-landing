@@ -1,45 +1,71 @@
-💆‍♀️ Clínica Estética - Landing Page
+# 💆‍♀️ Clínica Estética - Landing Page
 
-Landing Page fictícia para uma Clínica Estética, criada com HTML, CSS e JavaScript.
-O objetivo do projeto é simular um site moderno e responsivo para clínicas de estética, com foco em atrair novos clientes e destacar serviços de beleza e bem-estar.
+Landing Page fictícia para uma **Clínica Estética**, criada com HTML, CSS e JavaScript.  
+O objetivo do projeto é simular um site moderno e responsivo para clínicas de estética, com foco em **atrair novos clientes** e destacar serviços de beleza e bem-estar.
 
-🔗 Visualizar Projeto
+---
 
+## 🔗 Visualizar Projeto
 
-📸 Screenshots
-Página Inicial
-<p> <img width="800" alt="home" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" /> </p>
-Seção de Serviços
-<p> <img width="800" alt="servicos" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" /> </p>
-Equipe Especializada
-<p> <img width="800" alt="equipe" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" /> </p>
-Versão Mobile
-<p> <img width="582" alt="mobile" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" /> </p>
-🚀 Funcionalidades:
+<a href="https://tainamartins20.github.io/clinica-landing/" target="_blank">
+  <button style="padding:10px 20px; background-color:#ff6b81; color:white; border:none; border-radius:5px; cursor:pointer;">
+    Visualizar Projeto
+  </button>
+</a>
 
-Hero Section com destaque para chamada principal e botão de agendamento.
+---
 
-Seção de serviços apresentando os principais procedimentos oferecidos.
+## 📸 Screenshots
 
-Seção da equipe destacando profissionais e credibilidade.
+### Página Inicial
+<p align="center">
+  <img width="800" alt="home" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+</p>
 
-Sessão de contato para facilitar o agendamento.
+### Seção de Serviços
+<p align="center">
+  <img width="800" alt="servicos" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+</p>
 
-Design 100% responsivo adaptado para desktop, tablets e mobile.
+### Equipe Especializada
+<p align="center">
+  <img width="800" alt="equipe" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+</p>
 
-Animações suaves ao rolar a página e interação nos elementos.
+### Versão Mobile
+<p align="center">
+  <img width="400" alt="mobile" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+</p>
 
-🛠️ Tecnologias Utilizadas:
+---
 
-HTML5 → Estrutura semântica da página
+## 🚀 Funcionalidades
 
-CSS3 → Estilização moderna com flexbox, grid e animações
+<ul>
+<li><strong>Hero Section</strong> com destaque para chamada principal e botão de agendamento.</li>
+<li><strong>Seção de serviços</strong> apresentando os principais procedimentos oferecidos.</li>
+<li><strong>Seção da equipe</strong> destacando profissionais e credibilidade.</li>
+<li><strong>Sessão de contato</strong> para facilitar o agendamento.</li>
+<li><strong>Design 100% responsivo</strong> adaptado para desktop, tablets e mobile.</li>
+<li><strong>Animações suaves</strong> ao rolar a página e interação nos elementos.</li>
+</ul>
 
-JavaScript (ES6+) → Interatividade e animações
+---
 
-Google Fonts → Tipografia
+## 🛠️ Tecnologias Utilizadas
 
-📂 Estrutura de Pastas
+<ul>
+<li><strong>HTML5</strong> → Estrutura semântica da página</li>
+<li><strong>CSS3</strong> → Estilização moderna com flexbox, grid e animações</li>
+<li><strong>JavaScript (ES6+)</strong> → Interatividade e animações</li>
+<li><strong>Google Fonts</strong> → Tipografia</li>
+</ul>
+
+---
+
+## 📂 Estrutura de Pastas
+
+```bash
 landing_page_clinica/
 ├── index.html
 ├── assets/
@@ -52,19 +78,17 @@ landing_page_clinica/
 │       ├── service1.jpg
 │       ├── service2.jpg
 │       └── ...
+```
 
-⚙️ Como Executar o Projeto
+⚙️ Como Executar o Projeto: 
 
-Faça o download ou clone o repositório:
-
+<ol> <li>Faça o download ou clone o repositório:</li> </ol>
+bash
+Copiar código
 git clone https://github.com/tainamartins20/clinica-landing.git
-
-
-Acesse a pasta do projeto:
-
+<ol start="2"> <li>Acesse a pasta do projeto:</li> </ol>
+bash
+Copiar código
 cd clinica-landing
-
-
-Abra o arquivo index.html no navegador de sua preferência.
-
-Desenvolvido por Tainá Martins.
+<ol start="3"> <li>Abra o arquivo <strong>index.html</strong> no navegador de sua preferência.</li> </ol>
+<p align="center"> Desenvolvido por <strong>Tainá Martins</strong> 💜 </p> ```
