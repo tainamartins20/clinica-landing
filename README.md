@@ -14,23 +14,24 @@ O objetivo do projeto é simular um site moderno e responsivo para clínicas de 
 ## 📸 Screenshots
 
 ### Página Inicial
-<p align="center">
-  <img width="800" alt="home" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+<p>
+  <img width="800" alt="estetica1" src="https://github.com/user-attachments/assets/ff1665fd-adb6-403d-adac-303199f88d70" />
 </p>
 
-### Seção de Serviços
-<p align="center">
-  <img width="800" alt="servicos" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+
+### Por que escolher a Floralis?
+<p>
+  <img width="800" alt="estetica2" src="https://github.com/user-attachments/assets/0efec806-256e-4e83-bbae-b41dd3b4c3e2" />
 </p>
 
-### Equipe Especializada
-<p align="center">
-  <img width="800" alt="equipe" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+### Serviços em Destaque
+<p>
+  <img width="800" alt="estetica3" src="https://github.com/user-attachments/assets/9df264bb-c98c-4692-ba24-d1e377fa490b" />
 </p>
 
-### Versão Mobile
-<p align="center">
-  <img width="400" alt="mobile" src="https://github.com/user-attachments/assets/SEU_PRINT_AQUI" />
+### Contato / Agendamento
+<p>
+  <img width="800" alt="estetica4" src="https://github.com/user-attachments/assets/84cfd027-18ca-4cb5-b768-2bfc0b2606a7" />
 </p>
 
 ---
