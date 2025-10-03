@@ -76,15 +76,20 @@ landing_page_clinica/
 │       └── ...
 ```
 
-⚙️ Como Executar o Projeto: 
+## ⚙️ Como Executar o Projeto
 
-<ol> <li>Faça o download ou clone o repositório:</li> </ol>
-bash
-Copiar código
+1. Faça o download ou clone o repositório:
+
+```bash
 git clone https://github.com/tainamartins20/clinica-landing.git
-<ol start="2"> <li>Acesse a pasta do projeto:</li> </ol>
-bash
-Copiar código
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
 cd clinica-landing
-<ol start="3"> <li>Abra o arquivo <strong>index.html</strong> no navegador de sua preferência.</li> </ol>
-<p align="center"> Desenvolvido por <strong>Tainá Martins</strong> 💜 </p> ```
+```
+
+3. Abra o arquivo index.html no navegador de sua preferência.
+
+Desenvolvido por Tainá Martins.
