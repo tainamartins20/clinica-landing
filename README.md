@@ -63,7 +63,7 @@ O objetivo do projeto é simular um site moderno e responsivo para clínicas de 
 ## 📂 Estrutura de Pastas
 
 ```bash
-landing_page_clinica/
+clinica-landing/
 ├── index.html
 ├── assets/
 │   ├── css/
